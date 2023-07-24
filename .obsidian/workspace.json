@@ -8,23 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "49394270aa13436d",
+            "id": "5a41bc293bc124f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "types.md",
+                "file": "AbyssViewer/Billboard.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "27345b3911dfc467",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
             }
           }
         ]
@@ -93,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "types.md",
+                "file": "AbyssViewer/Billboard.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "types.md",
+                "file": "AbyssViewer/Billboard.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "types.md"
+                "file": "AbyssViewer/Billboard.md"
               }
             }
           }
@@ -154,14 +146,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "49394270aa13436d",
+  "active": "5a41bc293bc124f9",
   "lastOpenFiles": [
+    "AbyssViewer/Billboard.md",
+    "threejs/sprite.md",
+    "2023-07-24.md",
+    "threejs/Wrapping.md",
+    "threejs",
+    "concepts/UV coordinates.md",
+    "AbyssViewer/RandomGenerator.md",
+    "concepts",
+    "types.md",
+    "AbyssViewer/index.ts.md",
     "AbyssViewer/utils.md",
     "AbyssViewer/TextLabel.md",
     "AbyssViewer/Animation.md",
-    "AbyssViewer/index.ts.md",
-    "types.md",
-    "AbyssViewer/RandomGenerator.md",
     "AbyssViewer.md",
     "AbyssViewer"
   ]

@@ -4,7 +4,7 @@ This files only contains one class, RandomGenerator. This class generates pseudo
 
 2. **generate()**: This method generates the next random number using the LCG algorithm. It updates the `seed` property using the formula `(seed * 16807) % 2147483647`. The modulus operation (`%`) ensures that the new `seed` remains within the range of a 32-bit signed integer (1 to 2,147,483,646).
 
-3. **next()**: This method generates the next pseudo-random floating-point number between 0 (inclusive) and 1 (exclusive). It calls the `generate()` method to update the `seed` and then returns a number computed as `(seed - 1) / 2147483646`. The returned value will be in the range from 0 (inclusive) to approximately 0.999999767 (exclusive).
+3. **next()**: This method generates the next pseudo-random floating-point number between 0 (inclusive) and 1 (exclusive). It calls the `generate()` method to update the `seed` and then returns a number computed as `(seed - 1) / 2147483646`. The returned value will be in the range from 0 (inclusive) to approximately `0.999999767` (exclusive).
 
 4. **nextInt(highLimit)**: This method generates the next pseudo-random integer between 0 (inclusive) and `highLimit` (exclusive). It calls the `generate()` method to update the `seed` and then returns a number computed as `(seed - 1) % highLimit`. The returned value will be in the range from 0 (inclusive) to `highLimit - 1`.
 
