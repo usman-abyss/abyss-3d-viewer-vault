@@ -1,0 +1,11 @@
+This files only contains one class, RandomGenerator. This class generates pseudo-random numbers based on a provided seed value or a default seed if none is provided. This class implements a linear [congruential generator (LCG)](https://en.wikipedia.org/wiki/Linear_congruential_generator) to produce random numbers. Let's break down the class and its methods:
+
+1. **Constructor**: The constructor of the `RandomGenerator` class takes an optional `seed` parameter, which is a number used to initialize the random number generation process. If no `seed` is provided, it defaults to `123456789`. The `seed` property of the class is set to this initial value.
+
+2. **generate()**: This method generates the next random number using the LCG algorithm. It updates the `seed` property using the formula `(seed * 16807) % 2147483647`. The modulus operation (`%`) ensures that the new `seed` remains within the range of a 32-bit signed integer (1 to 2,147,483,646).
+
+3. **next()**: This method generates the next pseudo-random floating-point number between 0 (inclusive) and 1 (exclusive). It calls the `generate()` method to update the `seed` and then returns a number computed as `(seed - 1) / 2147483646`. The returned value will be in the range from 0 (inclusive) to approximately 0.999999767 (exclusive).
+
+4. **nextInt(highLimit)**: This method generates the next pseudo-random integer between 0 (inclusive) and `highLimit` (exclusive). It calls the `generate()` method to update the `seed` and then returns a number computed as `(seed - 1) % highLimit`. The returned value will be in the range from 0 (inclusive) to `highLimit - 1`.
+
+It's important to note that this implementation of the LCG algorithm is simple and may not provide the highest quality random numbers, especially for cryptographic purposes. Additionally, LCG algorithms can exhibit some patterns in their generated sequences due to their linear nature. For many non-critical applications, such as simple simulations or games, this level of randomization might be sufficient. However, for more advanced or secure use cases, cryptographic-grade random number generators should be used.
